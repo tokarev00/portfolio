@@ -1,0 +1,96 @@
+@media (max-width:600px){
+    /* header */
+    .header__nav{
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .header__list{
+        position: fixed;
+        background-color:#e7e3e3;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        z-index: 12;
+        transform: translateY(-1000px);
+        transition: transform ease .2s;
+    }
+    .header__item{
+        margin:-15px 25px 0px 25px;
+    }
+    .menu-btn{
+        display: block;
+        width: 33px;
+        height: 24px;
+        border: none;
+        position: relative;
+        background-color: transparent;
+        cursor: pointer;
+        z-index: 15;
+        outline: transparent;
+    }
+    .menu-btn__line-top,
+    .menu-btn__line-bottom,
+    .menu-btn__line-middle{
+        content:"";
+        display: block;
+        width: 33px;
+        height: 4px;
+        background-color: #000;
+    }
+    .menu-btn__line{
+        margin: 5px 0;
+    }
+    .skills__items{
+        flex-direction: column;
+    }
+    .skills__item{
+        margin-bottom: 30px;
+    }
+    .skills__text{
+        padding-top: 15px;
+        padding-bottom: 25px;
+    }
+    /* menu active */
+    .header__list.active {
+        transform: translateY(0);
+    }
+    .menu-btn.active .menu-btn__line-middle{
+        transform: scale(0);
+    }
+    .menu-btn.active .menu-btn__line-top{
+        transform: rotate(-45deg) translateY(13px);
+    }
+    .menu-btn.active .menu-btn__line-bottom{
+        transform: rotate(45deg) translateY(-13px);
+    }
+}
+@media(max-width: 520px){
+    .about-me__top-inner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .lang-toggle-btn{
+        display: none;
+    }
+
+    .section{
+        padding-top: 30px;
+    }
+    /* about-me */
+    .about-me{
+        padding-top:45px;
+    }
+    .about-me__bottom-inner{
+        padding-top:25px;
+        padding-bottom: 25px;
+        margin-top: 0;
+    }
+    .about-me__text:last-child{
+        margin-bottom: 5px;
+    }
+}

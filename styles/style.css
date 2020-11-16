@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+
+html, body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.container{
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* header */
+.header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+header::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(236, 233, 233, 0.9);
+    z-index: -1;
+}
+
+
+.header__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #828282;
+    font-weight: bold;
+}
+.header__item{
+    list-style-type: none;
+}
+.header__item:not(:last-child){
+    margin-right: 15px;
+}
+.header__link{
+    color: #828282;
+    z-index: 11;
+}
+.header__link:hover{
+    color: #000;
+}
+
+.menu-btn{
+    display: none;
+}
+.section{
+    padding-top:125px;
+}
+.heading{
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* about-me */
+
+.about-me__top-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 50px;
+}
+
+.about-me__my-name{
+    font-size: 48px;
+    line-height: 59px;
+}
+.about-me__my-personal-data{
+    font-size: 18px;
+    line-height: 22px;
+}
+.lang-toggle-btn{
+    transform: rotate(-90deg) translateX(25px);
+}
+.lang-toggle-btn__link{
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.lang-toggle-btn__link:hover{
+    color: #000;
+}
+.lang-toggle-btn__link+span{
+    color: #828282;
+}
+.about-me__bottom-inner{
+    text-align: center;
+    padding:120px 0;
+    margin-top: 110px;
+}
+.about-me__foto img{
+    display: block;
+    max-width: 100%;
+
+
+}
+.about-me__text{
+    line-height: 22px;
+    color: #070707;
+    margin-bottom: 25px;
+}
+.about-me__text:last-child{
+    margin-bottom: 35px;
+}
+/* skills */
+
+.skills__text{
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+}
+.skills__items{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.skills__item p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 25px;
+}
+/* contacts */
+.contacts{
+    text-align: center;
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+.contacts__text{
+    margin-top: 25px;
+    margin-bottom: 60px;
+}
+.message-btn{
+    width: 180px;
+    height: 42px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    outline: none;
+}
+.message-btn:hover{
+    border: 1px solid rgb(145, 144, 144);
+    background-color: #fff;
+    color: #000;
+}
+.message-btn:active{
+    background: rgb(145, 144, 144);
+    color: #fff;
+
+}
+.contacts__social-links{
+    max-width: 330px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto 70px;
+}

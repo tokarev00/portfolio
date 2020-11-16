@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/media.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#" class="header__link">Home</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#about" class="header__link">About me</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#skills" class="header__link">Skills</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Portfolio</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#contacts" class="header__link">Contacts</a>
+                        </li>
+                    </ul>
+                    <button class="menu-btn">
+                        <span class="menu-btn__line menu-btn__line-top" ></span>
+                        <span class="menu-btn__line menu-btn__line-middle"></span>
+                        <span class="menu-btn__line menu-btn__line-bottom"></span>
+                    </button>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <section class="section about-me">
+                <div class="container">
+                    <div class="about-me__top-inner">
+                        <h1 class="about-me__my-name">Denis<br> Novik</h1>
+                        <P class="about-me__my-personal-data"> 
+                            UX | UI designer<br>
+                            24 years old, Minsk
+                        </P>
+                        <div class="lang-toggle-btn">
+                            <a href="" class="lang-toggle-btn__link lang-toggle-btn__link-ru">ru</a>
+                            <span>|</span>
+                            <a href="" class="lang-toggle-btn__link lang-toggle-btn__link-eng">eng</a>
+                        </div>
+                    </div>
+                    <div class="about-me__foto">
+                        <img src="img/my-foto.jpg" alt="my-foto">
+                    </div>
+                    <div class="about-me__bottom-inner">
+                        <h2 class="about-me__heading heading" id="about">About me</h2>
+                        <p class="about-me__text">Hi, I'm Denis – UX/UI designer from Minsk.<br> 
+                            I'm interested in design and everything connected with it.<br>
+                            Ready to implement excellent projects<br>
+                            with wonderful people.</p>
+                        <p class="about-me__text">I'm studying at courses "Web and mobile design<br>
+                            interfaces" in IT-Academy.</p>
+                        <p class="about-me__text">Ready to implement excellent projects<br>
+                            with wonderful people.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="section skills" id="skills">
+                <div class="container">
+                    <h2 class="skills__heading heading">Skills</h2>
+                    <p class="skills__text">I work in such programs as</p>
+                    <div class="skills__items">
+                        <div class="skills__item">
+                            <img src="img/skills/photoshop.svg" alt="photoshop-icon">
+                            <p>Adobe<br> Photoshop</p>
+                        </div>
+                        <div class="skills__item">
+                            <img src="img/skills/illustrator.svg" alt="illustrator-icon">
+                            <p>Adobe<br> Illustrator</p>
+                        </div>
+                        <div class="skills__item">
+                            <img src="img/skills/adobe-effects.svg" alt="effects-icon">
+                            <p>Adobe<br> After Effects</p>
+                        </div>
+                        <div class="skills__item">
+                            <img src="img/skills/figma.svg" alt="figma-icon">
+                            <p>Figma</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section contacts" id="contacts">
+                <div class="container">
+                    <h2 class="heading">Contacts</h2>
+                    <p class="contacts__text">
+                        Want to know more or just chat?<br>
+                        You are welcome!
+                    </p>
+                    <button class="message-btn">Send message</button>
+                    <div class="contacts__social-links">
+                        <a href="#" class="social-link">
+                            <img src="img/contacts/in.svg" alt="in-icon" class="social-icon">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="img/contacts/instagram.svg" alt="instagram-icon" class="social-icon">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="img/contacts/be.svg" alt="be-icon" class="social-icon">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="img/contacts/ball.svg" alt="ball-icon" class="social-icon">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="js/script.js"></script>
+    </body>
+</html>
